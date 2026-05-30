@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ohm's Law Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-box">
+        <h1>Ohm's Law Calculator</h1>
+        <p>Choose what you want to calculate:</p>
+
+        <select id="choice" onchange="updateInputs()">
+            <option value="voltage">Voltage (V)</option>
+            <option value="current">Current (I)</option>
+            <option value="resistance">Resistance (R)</option>
+        </select>
+
+        <div id="input-container">
+            <!-- Inputs will change automatically -->
+        </div>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
